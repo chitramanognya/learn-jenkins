@@ -11,6 +11,9 @@ node('workstation') {
       }
     
   stage("two") {
+    input {
+      message "should we continue?"
+      ok "Yes, we should."
       echo "two"
     }
     } catch (e) {
