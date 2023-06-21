@@ -3,6 +3,7 @@ node('workstation') {
    
   stage("one") {
       echo "one"
+      exit 1
         }
     
   stage("two") {
