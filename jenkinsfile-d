@@ -4,12 +4,14 @@ pipeline {
 
 //Node Name agent
 
+//agent {
+
+//node { label 'workstation' }
+//}
+
 agent {
-
-node { label 'workstation' }
+  label 'terraform'
 }
-
-
 
  stages {
 
