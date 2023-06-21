@@ -28,4 +28,10 @@ agent {
     }
  
  }
+ 
+ post {
+   always {
+      echo 'Hello'
+   }
+  }
 }
