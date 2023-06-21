@@ -30,7 +30,7 @@ agent {
  }
  
  post {
-   always {
+   failure {
       echo 'Hello'
    }
   }
