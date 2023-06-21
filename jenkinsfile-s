@@ -11,11 +11,9 @@ node('workstation') {
       }
     
   stage("two") {
-    input {
-      message "should we continue?"
-      ok "Yes, we should."
+    input (id: 'deploy_approval', message: 'Approve deployment?', ok: 'Deploy', reject: 'Cancel')
       echo "two"
-    }
+
     } catch (e) {
        stage('Declarative: Post Actions') {
        
